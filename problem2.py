@@ -23,3 +23,28 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+x = int(input())
+y = int(input())
+
+if x > y:
+    big = x
+    small = y
+    if (big % small) == 0:
+        small = str(small)
+        big = str(big)
+        print(small +" is a factor of " + big)
+    else:
+        small = str(small)
+        big = str(big)
+        print(small + " is not a factor of " + big)
+elif y > x:
+    big = y
+    small = x
+    if (big % small) == 0:
+        small = str(small)
+        big = str(big)
+        print(small +" is a factor of " + big)
+    else:
+        small = str(small)
+        big = str(big)
+        print(small + " is not a factor of " + big)
