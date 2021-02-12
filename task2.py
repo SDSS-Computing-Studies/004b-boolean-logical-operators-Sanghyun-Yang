@@ -28,3 +28,18 @@ Example:
 Enter a number: 8
 8 is only a perfect cube.
 """
+
+import math
+x = int(input())
+sqrtx = round(math.sqrt(x) , 3)
+sqrtxs = math.sqrt(x)
+cubex = round(x ** (1/3) , 3 ) 
+cubexs = round(x ** (1/3), 8)
+x = str(x) 
+#print(sqrtx, sqrtxs, cubex, cubexs)
+if ((sqrtx - sqrtxs) == 0) and  ((cubex - cubexs) == 0):
+    print(x + " is both a perfect square and a perfect cube.")
+elif (sqrtx - sqrtxs) == 0:
+    print(x + " is only a perfect square.")
+elif((cubex - cubexs) == 0):
+    print(x + " is only a perfect cube.")
