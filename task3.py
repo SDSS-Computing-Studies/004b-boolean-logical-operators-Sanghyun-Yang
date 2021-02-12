@@ -1,4 +1,4 @@
-#! python3
+
 """
 Ask the user to enter a number. 
 Tell them if the number is a positive integer
@@ -15,10 +15,16 @@ example:
 Enter a number: -3
 -3 is not a positive integer
 """
-xx = int(input())
-if xx > 0: 
-    xx = str(xx)
-    print(xx + " is a positive integer.")
-elif xx < 0:
-    xx = str(xx)
-    print(xx + " is not a positive integer")
+#! python3
+x = float(input("Enter a number: "))
+y = int(x)
+if x - y != 0: 
+    x = str(x)
+    print(x + " is not a positive integer.")
+elif x < 0:
+    x = str(x)
+    print(x + " is not a positive integer")
+else:
+    x = str(x)
+    print(x + " is a positive integer.")
+    
