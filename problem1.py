@@ -19,3 +19,11 @@ Enter a number: 48
 """
 
 #! python3
+x = int(input())
+
+if (x % 6) == 0 and (x % 8) != 0:
+    x = str(x)
+    print(x + " is frue")
+else:
+    x = str(x)
+    print(x + " is not frue")
